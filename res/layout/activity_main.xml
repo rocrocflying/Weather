@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#05B1FE"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NA"
+                android:textColor="#FFFFFF"
+                android:textSize="160sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#05B1FE"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/weather_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sun" />
+
+                <TextView
+                    android:id="@+id/descri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多云"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/weather_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/ic_temper" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多云"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/weather_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/ic_pm25" />
+
+                <TextView
+                    android:id="@+id/pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多云"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="#FAFAFA"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_today"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="实时天气"
+                android:textColor="#AAAAAA"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="35dp"
+                android:background="#E4E4E4" />
+
+            <TextView
+                android:id="@+id/tv_future"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="天气指数"
+                android:textColor="#AAAAAA"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FAFAFA" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:text="DrawerLayout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/tv_addcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="14sp"
+            android:text="添加城市"
+            android:textColor="#05B1FE"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E4E4" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

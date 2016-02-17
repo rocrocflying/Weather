@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#05B1FE" >
+
+        <ImageButton
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_left"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/btn_return"
+            android:text="添加城市"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:background="@drawable/edittext"
+        android:textColorHint="#AAAAAA"
+        android:hint="搜索城市" />
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+      
+        android:layout_weight="1" >
+    </ListView>
+    
+
+</LinearLayout>
